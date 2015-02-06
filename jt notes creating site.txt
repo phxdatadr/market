@@ -1,0 +1,10 @@
+
+cd\
+
+cd row
+
+rails new market
+
+cd market
+
+
