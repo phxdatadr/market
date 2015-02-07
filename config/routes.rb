@@ -25,5 +25,5 @@ Rails.application.routes.draw do
 
 
 
-  root to: 'articles#show'
+  root to: 'articles#index'
 end
