@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @classsified.title %>
+</p>
+
+<p>
+  <strong>Posteddate:</strong>
+  <%= @classsified.postedDate %>
+</p>
+
+<p>
+  <strong>Details:</strong>
+  <%= @classsified.details %>
+</p>
+
+<p>
+  <strong>Expiredate:</strong>
+  <%= @classsified.expireDate %>
+</p>
+
+<p>
+  <strong>Categoryid:</strong>
+  <%= @classsified.categoryid %>
+</p>
+
+<p>
+  <strong>Contactid:</strong>
+  <%= @classsified.contactId %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @classsified.status %>
+</p>
+
+<%= link_to 'Edit', edit_classsified_path(@classsified) %> |
+<%= link_to 'Back', classsifieds_path %>

@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  postedDate: 2015-02-06
+  details: MyString
+  expireDate: 2015-02-06
+  categoryid: 1
+  contactId: 1
+  status: MyString
+
+two:
+  title: MyString
+  postedDate: 2015-02-06
+  details: MyString
+  expireDate: 2015-02-06
+  categoryid: 1
+  contactId: 1
+  status: MyString

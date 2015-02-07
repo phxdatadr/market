@@ -1,0 +1,45 @@
+<%= form_for(@classsified) do |f| %>
+  <% if @classsified.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@classsified.errors.count, "error") %> prohibited this classsified from being saved:</h2>
+
+      <ul>
+      <% @classsified.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :postedDate %><br>
+    <%= f.date_select :postedDate %>
+  </div>
+  <div class="field">
+    <%= f.label :details %><br>
+    <%= f.text_field :details %>
+  </div>
+  <div class="field">
+    <%= f.label :expireDate %><br>
+    <%= f.date_select :expireDate %>
+  </div>
+  <div class="field">
+    <%= f.label :categoryid %><br>
+    <%= f.number_field :categoryid %>
+  </div>
+  <div class="field">
+    <%= f.label :contactId %><br>
+    <%= f.number_field :contactId %>
+  </div>
+  <div class="field">
+    <%= f.label :status %><br>
+    <%= f.text_field :status %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

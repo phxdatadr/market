@@ -1,5 +1,10 @@
 Rails.application.routes.draw do  
 
+  mount Ckeditor::Engine => '/ckeditor'
+  resources :articles
+
+  resources :classsifieds
+
   resources :zipcodes
 
   devise_for :admins
@@ -20,5 +25,5 @@ Rails.application.routes.draw do
 
 
 
-  root to: 'welcome#index'
+  root to: 'articles#show'
 end
